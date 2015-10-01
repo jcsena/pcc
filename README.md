@@ -1,5 +1,6 @@
-# pcc
-<<<<<<< HEAD
-=======
-pcc
->>>>>>> d5811d90de36063ed073e20ec167b81a37e03947
+# PCC
+
+* [Investigaciones](https://github.com/jcsena/pcc/tree/master/investigaciones)
+* [Laboratorios](https://github.com/jcsena/pcc/tree/master/laboratorios)
+* [Parciales ](https://github.com/jcsena/pcc/tree/master/parciales)
+* [Tareas   ](https://github.com/jcsena/pcc/tree/master/tareas)
