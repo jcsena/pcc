@@ -1,4 +1,4 @@
-# PCC
+# PCC - 2
 
 * [Investigaciones](https://github.com/jcsena/pcc/tree/master/investigaciones)
 * [Laboratorios](https://github.com/jcsena/pcc/tree/master/laboratorios)
