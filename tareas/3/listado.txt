@@ -1,0 +1,1129 @@
+1. Programa de inicio: Escritura en pantalla.
+
+#include<stdio.h>
+void main(){
+printf("Hola\n\n");
+}
+
+
+
+
+Una vez realizado el programa anterior, pasaremos a realizar ejercicios de cálculos matemáticos. Aprenderemos a declarar valores (int = números enteros, float = números decimales, char = caracteres) y a pedir al ordenador que los lea mediante la instrucción scanf. El cálculo de valores se sitúa sin instrucción.
+
+
+
+2. Programa que calcule la suma de dos números.
+
+#include <stdio.h>
+void main(){
+         int X,Y,Z;
+         printf("Por favor, introduzca un numero:  ");
+         scanf("%d",&X);
+         printf("Ahora, inserte otro:  ");
+         scanf("%d",&Y);
+         Z=X+Y;
+         printf("\nEl resultado es %d\n",Z);
+}
+
+
+
+3. Programa que calcula longitudes de circunferencia.
+
+#include <stdio.h>
+void main(){
+         float R,sol1;
+         printf("Bienvenido, calcularemos la longitud de su circunferencia.\n\n");
+         printf("Lo unico que debe hacer es introducir el radio: ");
+         scanf("%f",&R);
+         sol1=2*3.141592*R;
+         printf("\n\nEl resultado es %f\n\n",sol1);
+}
+
+
+Volver
+4. Programa que calcula la media aritmética de tres números cualesquiera.
+
+#include <stdio.h>
+void main(){
+         float a,b,c,M;
+         printf("Bienvenido, calcularemos la media aritmetica de tres numeros.\n\n");
+         printf("Por favor, introduzca el primero: ");
+         scanf("%f",&a);
+         printf("Ahora, inserte el segundo de ellos: ");
+         scanf("%f",&b);
+         printf("Por ultimo, teclee el numero final: ");
+         scanf("%f",&c);
+         M=(a+b+c)/3;
+         printf("\nEl resultado es %f\n\n",M);
+}
+
+
+
+5. Programa que calcula áreas de trapecios.
+
+#include <stdio.h>
+void main(){
+         float bma,bme,h,A;
+         printf("Bienvenido al programa para calcular areas de trapecios.\n\n");
+         printf("Bien, introduzca la base mayor: ");
+         scanf("%f",&bma);
+         printf("Ahora, escriba la base menor: ");
+         scanf("%f",&bme);
+         printf("Ya solo necesito la altura: ");
+         scanf("%f",&h);
+         A=((bma+bme)*h)/2;
+         printf("\nEl area del trapecio es %f\n\n",A);
+}
+
+
+
+Ahora pasaremos a aprender operaciones aritméticas más complejas, como la raíz cuadrada (sqrt).  Para ello introducimos una nueva librería (<math.h>).
+
+
+
+6. Programa que calcule raíces cuadradas enteras.
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         int X,R;
+         printf("Por favor, inserte un numero");
+         scanf("%d",&X);
+         R=sqrt(X);
+         printf("\nSu raiz cuadrada es %d\n\n",R);
+}
+
+
+
+7. Programa que calcula el área de un triángulo (Fórmula de Herón).
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         float a,b,c,sp,R;
+         printf("Bienvenido. Calcularemos el area del triangulo.\n\n");
+         printf("Introduce el primer lado: ");
+         scanf("%f",&a);
+         printf("Ahora, inserta el segundo lado: ");
+         scanf("%f",&b);
+         printf("Por ultimo, escribe el tercer lado: ");
+         scanf("%f",&c);
+         sp=(a+b+c)/2;
+         R=sqrt(sp*(sp-a)*(sp-b)*(sp-c));
+         printf("\nEl area obtenida es %f\n\n",R);
+         printf("Muchas gracias por utilizar este progama.\n\n");
+}
+
+
+
+8. Programa que calcula el capital final de un interés simple.
+
+#include <stdio.h>
+void main(){
+         float c,I,t,F;
+         printf("Bienvenido. Calcularemos el capital final de un interes simple.\n\n");
+         printf("Por favor, introduce el capital inicial: ");
+         scanf("%f",&c);
+         printf("Ahora, escribe el interes al que esta colocado: ");
+         scanf("%f",&I);
+         printf("Por ultimo, inserta el tiempo al que se deja el capital: ");
+         scanf("%f",&t);
+         F=c+c*(I/100)*t;
+         printf("\n\nEl capital final es de %f\n\n",F);
+}
+
+
+
+Otro símbolo que necesitaremos a partir de ahora será el “%”, que sirve para calcular el resto de una división. Podemos verlo en el siguiente ejemplo.
+
+
+
+9. Programa que calcule el resto de cualquier división entera.
+
+#include <stdio.h>
+void main(){
+         int D,d,R;
+         printf("Hola, obtendremos el resto de cualquier division entera.\n\n");
+         printf("Inserte el dividendo: ");
+         scanf("%d",&D);
+         printf("Bien, escriba el divisor: ");
+         scanf("%d",&d);
+         R=D%d;
+         printf("\nEl resto de la division es %d\n\n",R);
+}
+
+
+10. Programa que calcula el precio de un objeto sin el impuesto de valor añadido (IVA).
+
+#include <stdio.h>
+void main(){
+         float X,IVA,R;
+         printf("Bienvenido.Calcularemos el precio de un articulo sin el IVA.\n\n");
+         printf("Por favor, introduzca el precio de la compra: ");
+         scanf("%f",&X);
+         IVA=(16*X/100);
+         R=X-IVA;
+         printf("\nEl precio del objeto sin IVA es %f\n\n",R);
+}
+
+
+
+
+
+11. Programa que calcule el área de un triángulo.
+
+#include <stdio.h>
+void main(){
+         int B,H,A;
+         printf("Por favor, introduzca la base del triangulo");
+         scanf("%d",&B);
+         printf("Ahora, inserte la altura del mismo");
+         scanf("%d",&H);
+         A=B*H/2;
+         printf("\nSu area es de %d\n\n",A);
+}
+
+
+
+12. Programa que obtenga la media geométrica de tres numeros.
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         float a,b,c,R;
+         printf("Bienvenido, obtendremos la media geometrica de tres numeros.\n\n");
+         printf("Por favor, introduzca el primer numero: ");
+         scanf("%f",&a);
+         printf("Ahora, inserte el segundo numero: ");
+         scanf("%f",&b);
+         printf("Por ultimo, escriba el tercer numero: ");
+         scanf("%f",&c);
+         R=cbrt(a*b*c);
+         printf("\nEl resultado es %f\n\n",R);
+}
+
+Volver
+
+Una de las estructuras más utilizadas en programación en C++ es el “if”. Sirve para el ordenador distinga entre varios caminos posibles. Si hay más de uno, se utilizará “else” para señalar el restante. Las condiciones van entre llaves.
+
+Mayor	>
+Menor	<
+Igual	==
+Distinto	!=
+Mayor o igual	>=
+Menor o igual	<=
+
+
+Mejor verlo con este ejemplo:
+
+
+
+13. Programa que indica qué numero de los dos introducidos por el usuario es mayor.
+
+#include <stdio.h>
+void main(){
+         int X,Y;
+         printf("Por favor, escribe un numero ");
+         scanf("%d",&X);
+         printf("Ahora, teclea otro ");
+         scanf("%d",&Y);
+         if(X>Y){
+                   printf("\nEl mayor es %d\n\n",X);
+         }else if(Y>X){
+                   printf("\nEl mayor es %d\n\n",Y);
+         }else{
+                   printf("\nEstos dos numeros son iguales\n\n");
+         }
+}
+
+
+
+
+14. Programa que escriba en pantalla un comentario con respecto a la temperatura del día.
+
+#include <stdio.h>
+void main(){
+         int X,Y;
+         printf("Bienvenido. Introduzca la temperatura");
+         scanf("%d",&X);
+         if(X<15){
+                   printf("\nBrrr... Que frio!\n");
+         }else if(X<25){
+                   printf("\nClima templado\n");
+         }else{
+                   printf("\nBuf!..Que calor!\n");
+         }
+}
+
+
+
+15. Programa que resuelve ecuaciones de segundo grado.
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         float A,B,C,D,S,sol1,sol2;
+         printf("Bienvenido, Resolveremos su ecuacion de segundo grado.\n\n");
+         printf("\nPor favor, introduzca el coeficiente A: ");
+         scanf("%f",&A);
+         printf("\nAhora, escriba el coeficiente B: ");
+         scanf("%f",&B);
+         printf("\nPor ultimo, inserte el coeficiente C: ");
+         scanf("%f",&C);
+         D=B*B-4*A*C;
+         if(D<0){
+                   printf("\n\nDisculpe, no tiene solucion real\n\n");
+         }else if(D==0){
+                   S=-B/2*A;
+                   printf("\n\nEl resultado de la ecuacion es %f\n\n",S);
+         }else{
+                   sol1=(-B+sqrt(D))/(2*A);
+                   sol2=(-B-sqrt(D))/(2*A);
+                   printf("\n\nLos resultados de la ecuacion son %f y %f\n\n",sol1,sol2);
+         }
+         printf("\nGracias por utilizar este programa\n\n");
+}
+
+
+
+Como posiblemente habréis notado, se han utilizado dos iguales para expresar la segunda condición del anterior programa. Esto es porque se quiere lanzar una pregunta al ordenador, lo que indica que no siempre es de ese modo. (¿Y si D=0?) Otro ejemplo donde se ve este fenómeno con mayor facilidad:
+
+
+
+16. Programa que indica la correspondencia de un número introducido por el usuario con un mes del año  (aconsejable realizarlo con SWITCH).
+
+
+#include <stdio.h>
+void main(){
+         int m;
+         printf("Hola, le diremos el mes segun el numero introducido.\n\n");
+         printf("Introduzca el numero: ");
+        printf("\n");
+         scanf("%d",&m);
+         if(m==1){
+                   printf("Este numero se corresponde con el mes de Enero.\n\n");
+         }else if(m==2){
+                   printf("Este numero se corresponde con el mes de Febrero.\n\n");
+         }else if(m==3){
+                   printf("Este numero se corresponde con el mes de Marzo.\n\n");
+         }else if(m==4){
+                   printf("Este numero se corresponde con el mes de Abril.\n\n");
+         }else if(m==5){
+                   printf("Este numero se corresponde con el mes de Mayo.\n\n");
+         }else if(m==6){
+                   printf("Este numero se corresponde con el mes de Junio.\n\n");
+         }else if(m==7){
+                   printf("Este numero se corresponde con el mes de Julio.\n\n");
+         }else if(m==8){
+                   printf("Este numero se corresponde con el mes de Agosto.\n\n");
+         }else if(m==9){
+                   printf("Este numero se corresponde con el mes de Septiembre.\n\n");
+         }else if(m==10){
+                   printf("Este numero se corresponde con el mes de Octubre.\n\n");
+         }else if(m==11){
+                   printf("Este numero se corresponde con el mes de Noviembre.\n\n");
+         }else if(m==12){
+                   printf("Este numero se corresponde con el mes de Diciembre.\n\n");
+         }else{
+                   printf("Error, mes inexistente.\n\n");
+         }
+}
+
+
+
+Muchas veces querremos realizar un programa que muestre un menú, es decir, una serie de opciones para que nosotros decidamos a nuestra conveniencia. ¿Cómo se hace? Pues simplemente tomando una nueva variable “opción”, de la que extraeremos su jugo con “if”.
+
+
+
+17. Programa que simula un cajero automático con un saldo inicial de 1000 Euros.
+
+
+#include <stdio.h>
+void main(){
+         int SI,opc;
+         float din,dan,S;
+         SI=1000;
+         printf("Bienvenido a su cajero virtual.\n");
+         printf("Seleccione una opcion:\n\n");
+         printf("1.Ingreso en cuenta.\n2.Reintegro.\n3.Ver el saldo disponible\n0.Salir\n\nUsted ha marcado: ");
+         scanf("%d",&opc);
+         if(opc==1){
+            printf("\nBien, escriba el dinero que desee introducir: ");
+            scanf("%f",&din);
+            S=SI+din;
+            printf("\nIngreso realizado correctamente. Su saldo actual es de %f\n",S);
+         }else if(opc==2){
+            printf("\nAhora, teclee la cantidad de capital que desea retirar: ");
+            scanf("%f",&dan);
+            if(dan>SI){
+               printf("\nError. No dispone de tanto sueldo.\n");
+            }else{
+               S=SI-dan;
+               printf("\nReintegro realizado correctamente. Su saldo actual es de %f\n",S);
+            }
+         }else if(opc==3){
+            printf("\nSu saldo actual es de %d\n",SI);
+         }else if(opc==0){
+            printf("\nGracias por utilizar este programa.\n\n");
+         }else{
+            printf("\nDisculpe, se ha equivocado al marcar.\n\n");
+    }
+}
+
+
+
+En determinadas ocasiones nos será de mucha utilidad el poder borrar lo escrito en pantalla. Para ello debemos utilizar una nueva librería (<stdlib>) que contenga la instrucción para que se produzca el borrado. (system(“cls”)).
+
+
+18. Programa que borre la pantalla al pulsar “Intro”.
+
+#include <stdio.h>
+#include <stdlib.h>
+void main(){
+    char Espera;
+    printf("Programa de prueba de borrado de pantalla");
+    printf("\nPulsa intro");
+    scanf("%c",&Espera);
+    system("cls");
+    printf("Ha funcionado!, Hasta pronto.\n");
+}
+
+
+Volver
+
+Una vez visto cómo se realiza un borrado de pantalla, pasaremos a ver los bucles en C++, que realizan tareas repetitivas.  El primero de ellos es el bucle “for”. Lo usaremos siempre que conozcamos el número de iteraciones (Desde – hasta).
+
+Será necesario el uso de un contador (i).
+
+
+19. Programa que muestra los veinte primeros números naturales.
+
+
+#include <stdio.h>
+void main(){
+         int i=21;
+         const int tope=20;
+         for(i=0;i<=20;i=i+1){
+                   printf("%d\n",i);
+         }
+         printf("\nHasta pronto");
+}
+
+
+
+
+20. Programa que muestra los números pares hasta 30.
+
+#include <stdio.h>
+void main(){
+         int i=31;
+         const int tope=30;
+         for(i=0;i<=30;i=i+2){
+                   printf("%d\n",i);
+         }
+         printf("\nHasta pronto");
+}
+
+
+
+21. Programa que muestre los múltiplos de siete (hasta 123).
+
+#include <stdio.h>
+void main(){
+         int i=124;
+         const int tope=123;
+         for(i=0;i<=123;i=i+7){
+         printf("%d\n",i);
+         }
+         printf("\n,Hasta pronto");
+}
+
+
+
+22. Programa que muestre una cuenta atrás desde diez hasta cero.
+
+#include <stdio.h>
+void main(){
+         int i=10;
+         const int tope=0;
+         for(i=10;i>=0;i=i-1){
+                   printf("%d\n",i);
+         }
+         printf("\nHasta pronto!\n");
+}
+
+
+
+23. Programa que muestre un menú de múltiplos (De 2,3,5,7,11).
+
+#include <stdio.h>
+void main(){
+         int x,i,y,t,r,s;
+         printf("\nBienvenido, seleccione la opcion que desee mostrar.\n");
+         printf("1.Multiplos de 2\n2.Multiplos de 3\n3.Multiplos de 5\n4.Multiplos de 7\n5.Multiplos de 11\n\nNota:Exclusivamente mostrara hasta 100\n\n");
+         printf("Su opcion es:");
+         scanf("%d",&x);
+         if(x==1){
+                   int i=100;
+         const int tope=100;
+         for(i=0;i<=100;i=i+2){
+         printf("%d\n",i);
+         }}else if(x==2){
+                   int y=100;
+         const int tope=100;
+         for(y=0;y<=100;y=y+3){
+         printf("%d\n",y);
+         }}else if(x==3){
+                   int t=100;
+         const int tope=100;
+         for(t=0;t<=100;t=t+5){
+         printf("%d\n",t);
+         }}else if(x==4){
+                   int s=100;
+         const int tope=100;
+         for(s=0;s<=100;s=s+7){
+         printf("%d\n",s);
+         }}else if(x==5){
+                   int r=100;
+         const int tope=100;
+         for(r=0;r<=100;r=r+11){
+         printf("%d\n",r);
+         }}else{
+                   printf("Se ha equivocado.\n\n");
+         }
+}
+
+
+
+
+Cuando no deseemos que el ordenador vaya tan rápido, hay que meterle instrucciones inútiles que no se pinten en pantalla (Bucle de retardo), como por ejemplo una cuenta atrás del 159999999 al 0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24. Programa que realice una cuenta atrás con un bucle de retardo.
+
+#include <stdio.h>
+void main(){
+         int i=10;
+         const int tope=1;
+         for(i=10;i>=1;i=i-1){
+                   printf("%d\n",i);
+                   int k=159999999;
+             for(k=159999999;k>=1;k=k-1);
+         }
+         printf("\nPUM!\n");
+}
+
+
+
+En los bucles “while” y “do while” no es necesario conocer el número de iteraciones.
+
+While  Iteraciones >= 0.
+Do while  Iteraciones >=1.
+
+
+
+25. Programa que diga si un número es par o no. Finaliza al pulsar “0”.
+
+#include <stdio.h>
+void main(){
+         int num;
+         printf("Por favor, escribe el numero que quieras.Te diremos si es par o impar: ");
+         while (num!=0){
+                   scanf("%d",&num);
+                   if(num%2==0){
+                            printf("\n\nEste numero es par.\n");
+                   }else{
+                            printf("\n\nEste numero es impar.\n");
+                   }
+         }
+         printf("\nHasta luego.\n\n");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aquí tenemos un extenso programa como ejemplo para demostrar la sencillez y utilidad del bucle “do while”.
+
+26. Programa que simule un calculadora científica de 25 funciones.
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         float x,y,s,d,p,c,sr,rq,res,ros,cb,ch,co,cop,se,sep,ta,tap,cub,cubp,in,inp,lo,lop,ln,lnp;
+         int opc;
+         printf("Bienvenido a la calculadora de 25 funciones.\n\n");
+         do{
+             printf("Por favor, introduzca un numero (0 para salir): ");
+             scanf("%f",&x);
+             printf("\nAhora, inserte otro: ");
+             scanf("%f",&y);
+             printf("\n\nBien. Ya puede seleccionar una opcion:\n\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Indicar el mayor\n6.Raiz cuadrada del primer numero\n7.Raiz cuadrada del segundo numero\n8.Cuadrado del primer numero\n9.Cuadrado del segundo numero\n10.Raiz cubica del primer numero\n11.Raiz cubica del segundo numero\n12.Coseno del primer numero\n13.Coseno del segundo numero\n14.Seno del primer numero\n15.Seno del segundo numero\n16.Tangente del primer numero\n");
+                   printf("17.Tangente del segundo numero\n18.Cubo del primer numero\n19.Cubo del segundo numero\n20.Inversa del primer numero\n21.Inversa del segundo numero\n22.Logaritmo decimal del primer numero\n23.Logaritmo decimal del segundo numero\n24.Logaritmo neperiano del primer numero\n25.Logaritmo neperiano del segundo numero\n0.Salir\n\nUsted ha marcado: ");
+                   scanf("%d",&opc);
+                   if(opc==1){
+                            s=x+y;
+                            printf("La suma de ambos numeros es %f\n\n",s);
+                   }else if(opc==2){
+                            d=x-y;
+                            printf("La diferencia de ambos numeros es %f\n\n",d);
+                   }else if(opc==3){
+                            p=x*y;
+                            printf("El producto de ambos numeros es %f\n\n",p);
+                   }else if(opc==4){
+                            c=x/y;
+                            printf("El cociente de la razon de ambos numeros es %f\n\n",c);
+                   }else if(opc==5){
+                            if(x>y){
+                                      printf("El mayor es %f\n\n",x);
+                            }else if(y>x){
+                                      printf("El mayor es %f\n\n",y);
+                            }else{
+                                      printf("Disculpe, estos dos numeros son iguales.\n\n");
+                            }
+                   }else if(opc==6){
+                            rq=sqrt(x);
+                            printf("La raiz cuadrada del primer numero es %f\n\n",rq);
+                   }else if(opc==7){
+                            sr=sqrt(y);
+                            printf("La raiz cuadrada del segundo numero es %f\n\n",sr);
+                   }else if(opc==8){
+                            res=x*x;
+                            printf("El cuadrado del primer numero es %f\n\n",res);
+                   }else if(opc==9){
+                            ros=y*y;
+                            printf("El cuadrado del segundo numero es %f\n\n",ros);
+                   }else if(opc==10){
+                            cb=cbrt(x);
+                            printf("La raiz cubica del primer numero es %f\n\n",cb);
+                   }else if(opc==11){
+                            ch=cbrt(y);
+                            printf("La raiz cubica del segundo numero es %f\n\n",ch);
+                   }else if(opc==12){
+                            co=cos(x);
+                            printf("El coseno del primer numero es %f\n\n",co);
+                   }else if(opc==13){
+                            cop=cos(y);
+                            printf("El coseno del segundo numero es %f\n\n",cop);
+                   }else if(opc==14){
+                            se=sin(x);
+                            printf("El seno del primer numero es %f\n\n",se);
+                   }else if(opc==15){
+                            sep=sin(y);
+                            printf("El seno del segundo numero es %f\n\n",sep);
+                   }else if(opc==16){
+                            ta=tan(x);
+                            printf("La tangente del primer numero es %f\n\n",ta);
+                   }else if(opc==17){
+                            tap=tan(y);
+                            printf("La tangente del segundo numero es %f\n\n",tap);
+                   }else if(opc==18){
+                            cub=x*x*x;
+                            printf("El cubo del primer numero es %f\n\n",cub);
+                   }else if(opc==19){
+                            cubp=y*y*y;
+                            printf("El cubo del segundo numero es %f\n\n",cubp);
+                   }else if(opc==20){
+                            in=1/x;
+                            printf("La inversa del primer numero es %f\n\n",in);
+                   }else if(opc==21){
+                            inp=1/y;
+                            printf("La inversa del segundo numero es %f\n\n",inp);
+                   }else if(opc==22){
+                            lo=log10(x);
+                            printf("El logaritmo decimal del primer numero es %f\n\n",lo);
+                   }else if(opc==23){
+                            lop=log10(y);
+                            printf("El logaritmo decimal del segundo numero es %f\n\n",lop);
+                   }else if(opc==24){
+                            ln=log(x);
+                            printf("El logaritmo neperiano del primer numero es %f\n\n",ln);
+                   }else if(opc==25){
+                            lnp=log(y);
+                            printf("El logaritmo neperiano del segundo numero es %f\n\n",lnp);
+                   }else if(opc==0){
+                            printf("Gracias por utilizar este programa.\n\n");
+             }else{
+                            printf("Disculpe, se ha equivocado al marcar.\n\n");
+             }
+         }while(x!=0);
+}
+
+
+
+27. Programa que muestre los divisores de un número introducido por el usuario.
+
+
+#include <stdio.h>
+void main(){
+         int num;
+         printf("Bienvenido al programa para calcular los divisores de un numero.\n\n");
+         while(num!=0){
+                   printf("Introduzca un numero: ");
+                   scanf("%d",&num);
+                   printf("\n\nSus divisores son:\n");
+                   for(int i=1; i<=num; i++){
+                            if(num%i==0){
+                                      printf("\n\t\t\t\t\t%d\t\n",i);
+                            }
+                   }
+         printf("\n");
+         }
+         printf("\nGracias por utilizar este programa.\n\n");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28. Programa que calcule la suma o el producto de los números comprendidos entre los límites marcados por el usuario.
+
+
+#include <stdio.h>
+void main(){
+         int sup,inf, opc;
+         double suma,prod;
+         printf("Bienvenido al programa de calculo con limites.\n\n");
+         do{
+            suma=0;
+            prod=1;
+            printf("Introduzca el limite superior: ");
+            scanf("%d",&sup);
+            printf("\nAhora, escriba el limite inferior: ");
+            scanf("%d",&inf);
+            printf("\n\nSeleccione una opcion:\n\n1.Suma\n2.Producto\n\nTeclee su eleccion: ");
+            scanf("%d",&opc);
+            switch (opc){
+                      case 1:
+                               for(int i=inf;i<=sup;i++){
+                                         suma=suma+i;
+                               }
+                               printf("\n\nEl resultado es %f\n\n",suma);
+                               break;
+                      case         2:
+                               for(int i=inf;i<=sup;i++){
+                                         prod=prod*i;
+                                         printf("%f",prod);
+                               }
+                               printf("\nEl resultado es %f\n\n",prod);
+                               break;
+                      default:printf("\nNo es un valor valido.\n\n");
+                   }
+         }while(sup!=0);
+         printf("\n\nGracias por utilizar este programa. Le esperamos pronto.\n\n");
+}
+
+
+
+
+29. Programa que calcule “x” términos de la sucesión de Fibonacci.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+void main(){
+         printf("Bienvenido al programa para calcular la progresion de Fibonacci.\n\n");
+         int veces, primer=0,segun=1,proximo,r;
+         char borrado;
+         printf("Introduzca el numero de terminos: ");
+    scanf("%d",&veces);
+         scanf("%c",&borrado);
+         system("cls");
+         printf("He aqui la sucesion de %d terminos: \n",veces);
+         for(int i=0;i<=veces;i++){
+           r=primer+segun;
+                      primer=segun;
+                      segun=r;
+                printf("\n\t\t\t\t%d",r);
+       }
+            printf("\n\nGracias por utilizar este programa.\n\n");
+}
+
+
+
+30. Programa que demuestre la validez de la conjetura de Collatz.
+
+
+#include <stdio.h>
+void main(){
+         int n;
+         printf("Bienvenido al programa demostracion de la conjetura de Collatz.\n\n");
+         printf("Inserte un numero: ");
+         scanf("%d",&n);
+         printf("\n");
+         while(n!=1){
+            if (n%2==0) {
+               printf("%d\t",(n/=2));
+           }else{
+               n=(3*n)+1;
+                               printf("%d\t",n);
+                      }
+         }
+         printf("\n");
+}
+
+
+
+Ahora vamos a realizar un programa con números aleatorios. Para ello debemos utilizar el reloj del ordenador (No se repitan los mismos valores una y otra vez), con la consiguiente aparición de una nueva librería (<time>).
+
+srand((unsigned)time(NULL))
+
+El problema es que el ordenador puede inventar números aleatorios desde uno hasta dos elevado a quince. Es muy útil saber poner un límite.
+
+Número aleatorio=rand()%(Tope+1);
+
+
+31. Programa que invente un número para que lo adivine el usuario, colocando un contador de intentos.
+
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+    int x,num,contador=0;
+    srand((unsigned)time(NULL));
+         x=rand()%(101);
+    printf("Intenta adivinar el numero que he pensado entre 0 y 100.");
+         int bandera=0;
+         while (bandera==0){
+                   printf("\n\nIntroduce numero: ");
+                   scanf("%d",&num);
+                   contador++;
+                   if(num>x){
+                            printf("\nMenor");
+                   }else if(num<x){
+                            printf("\nMayor");
+             }else{
+                            printf("\n\nEnhorabuena! Lo has adivinado en %d intentos.\n\n",contador);
+                            bandera=1;
+                   }
+         }
+}
+
+Volver
+
+Una vez visto ejemplos de bucles, pasemos a explicar la toma de caracteres (getch). Para ello hay que introducir una nueva librería (<conio>), prototipo necesario para la instrucción
+
+
+32. Programa de escritura en pantalla. Finaliza al pulsar la tecla “-“.
+
+#include <stdio.h>
+#include <conio.h>
+void main(){
+         char c;
+         while (c!='-'){
+                   c=getch();
+                   printf("%c",c);
+         }
+}
+
+
+33. Programa de escritura en pantalla con función de poder borrar lo escrito hasta el momento.
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+void main(){
+         char c;
+         char Espera;
+         printf("Bienvenido al programa de escritura en C++.\n\nSi pulsa + y posteriormente teclea Enter, se borrara todo lo escrito.\nSi pulsa -, dara por concluida su sesion.\n\n");
+         while (c!='-'){
+                   c=getch();
+                   printf("%c",c);
+                   if(c=='+'){
+                            scanf("%c",&Espera);
+            system("cls");
+                 }
+    }
+}
+
+
+
+Como habréis visto en el programa de la calculadora científica, el uso del “ else if” es extremadamente extenso. Es muy aconsejable realizar ese tipo de programas con la estructura siguiente:
+
+Switch(opción){
+         Case 1: -------------------------;
+                                               Break;
+         Case2: ------------------------;
+         Break;
+         Default: -----------------------;
+}
+
+
+34. Programa que muestre el horario escolar del día.
+
+#include <stdio.h>
+void main(){
+         int x;
+         printf("Bienvenido. Introduzca el numero del dia de la semana a consultar: ");
+         scanf("%d",&x);
+         switch(x){
+                   case 1:printf("\n\nLunes:\n\nReligion\nDibujo\nInformatica\nIngles\nLiteratura\nMatematicas\nFisica y Quimica\n\nVamos a por la semana!\n\n");break;
+                   case 2:printf("\n\nMartes:\n\nFilosofia\nDibujo\nMatematicas\nLiteratura\nEducacion fisica\nFisica y Quimica\n\nHoy hay una horita menos!\n\n");break;
+                   case 3:printf("\n\nMiercoles:\n\nFisica y Quimica\nDibujo\nIngles\nInformatica\nCiencias para el mundo contemporaneo\nFilosofia\nTutoria\n\nMitad de jornada, anima la moral!\n\n");break;
+                   case 4:printf("\n\nJueves:\n\nFilosofia\nDibujo\nLiteratura\nInformatica\nIngles\nEducacion Fisica\nMatematicas\n\nVenga, que mañana es viernes!\n\n");break;
+                   case 5:printf("\n\nViernes:\n\nCiencias para el mundo contemporaneo\nReligion\nFisica y Quimica\nLiteratura\nMatematicas\nInformatica\n\nYa se ha terminado lo duro. Descansa hoy!\n\n");break;
+                   case 6:printf("\n\nSabado:\n\nDeja el ordenador y disfruta del dia!\n\n");break;
+                   case 7:printf("\n\nDomingo:\n\nAprovecha el tiempo que mañana hay que volver a empezar!\n\n");break;
+                   default:printf("\n\nDisculpe, se ha equivocado al marcar.\n\n");
+         }
+}
+
+
+
+Otra estructura muy práctica es el uso de || (ctrl. + alt + 1).  Indica unión. Lo único que hay que recordar es que no soporta más de una separación, es decir:
+
+
+(num=x)||(num=y)  Bien
+
+(num=x)||(num=y)||(num=z)  Mal
+
+
+Luego habrá que hacer uso frecuente del paréntesis, como por ejemplo:
+
+
+
+35. Programa que genere manos de mus.
+
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+void main(){
+         int x,y,z,o,opc;
+         do{
+                   printf("Desea una mano de mus?:\n\n");
+                   printf("1.Si\n2.No\n0.Salir\n");
+                   printf("\nUsted ha introducido: ");
+                   scanf("%d",&opc);
+                   if(opc==1){
+                            srand((unsigned)time(NULL));
+                            do{
+                                      x=rand()%(13);
+                            }while(((x==8)||(x==9))||(x==0));
+                            do{
+                                      y=rand()%(13);
+                            }while(((y==8)||(y==9))||(y==0));
+                            do{
+                                      z=rand()%(13);
+                            }while(((z==8)||(z==9))||(z==0));
+                            do{
+                                      o=rand()%(13);
+                            }while(((o==8)||(o==9))||(o==0));
+                            printf("\n\n%d\t\t%d\t\t%d\t\t%d\t\t",x,y,z,o);
+                            printf("\n\n");
+                   }
+                   else if(opc==2){
+                            printf("\n\nMas tarde entonces.\n\n");
+                   }else{
+                            printf("\nHasta pronto.\n\n");
+                   }
+         }while(opc!=0);
+}
+
+
+
+36. Programa que indique si un número es o no primo.
+
+#include <stdio.h>
+void main(){
+         int num, i=2;
+         printf("Bienvenido al programa que le indica si un numero es o no primo.\n\n");
+         while(num!=0){
+                   printf("Introduzca un numero: ");
+                   scanf("%d",&num);
+                   for(int i=2; i<num; i++);
+                   if(num%i!=0){
+                            printf("\nPrimo\n");
+                   }else{
+                            printf("\nNo primo\n");
+                   }
+         printf("\n");
+         }
+         printf("\nGracias por utilizar este programa.\n\n");
+}
+
+
+
+
+37. Programa que calcula diagonales de cuadrados.
+
+#include <stdio.h>
+#include <math.h>
+void main(){
+         float l,d;
+         printf("Bienvenido al programa que calcula areas de cuadrados.\n");
+         do{
+                   printf("\nIntroduce el lado: ");
+                   scanf("%f",&l);
+                   d=sqrt(l*l+l*l);
+                   printf("\nLa diagonal de este cuadrado es %f\n",d);
+         }while(l!=0);
+}
+
+
+
+38. Programa que pregunte un número para contestar su correspondencia en código ASCII. Incluye una opción para ver el abecedario (desde el 97 hasta el 122).
+
+#include<stdio.h>
+void main(){
+int i,num;
+printf("Bienvenido al programa, pulse 256 para ver el abecedario y 0 para salir.\n\n");
+do{
+         printf("Introduzca  un numero del 1 al 255: ");
+         scanf("%d",&num);
+         if(num==256){
+                            for(i=97;i<=122;i++){
+        printf("\nEl numero %d es el caracter: %c \t\n\n",i,i);
+                   }
+    }else{
+                   for(i=1;i<=255;i++);
+                   i=num;
+         printf("\nEl numero %d es, en codigo ASCII: %c\n\n",num,i);
+         }
+         }while(num!=0);
+}
+
+
+
+39. Programa que cuente el número de vocales de un texto escrito por el usuario.
+
+#include <stdio.h>
+#include <conio.h>
+void main(){
+int bandera=0,a=0,e=0,i=0,o=0,u=0;
+char c;
+printf("Introduzca caracteres hasta pulsar el guion:\n\n");
+while(bandera==0){
+         c=getche();
+         if(c=='a'){
+                   a++;
+         }else if(c=='e'){
+                   e++;
+         }else if(c=='i'){
+                   i++;
+         }else if(c=='o'){
+         o++;
+         }else if(c=='u'){
+         u++;
+         }else if(c=='-'){
+         bandera=1;
+         }else{
+                   bandera=0;
+         }
+         }
+         printf("\n\n\t\t\tRecuento de vocales\n");
+         printf("\nLa a se ha repetido %d veces \n",a);
+         printf("\nLa e se ha repetido %d veces \n",e);
+         printf("\nLa i se ha repetido %d veces \n",i);
+         printf("\nLa o se ha repetido %d veces \n",o);
+         printf("\nLa u se ha repetido %d veces \n",u);
+    printf("\n\nGracias por utilizar este programa.\n\n");
+}
+
+
+
+
+40. Programa que calcule el factorial de un número.
+
+#include <stdio.h>
+void main(){
+         int i,num,fact=1;
+         printf("Bienvenido al programa para calcular factoriales.\n");
+                   printf("\nEscriba un numero entero: ");
+                   scanf("%d",&num);
+                   for(i=num;i>1; i--){
+                    fact=fact*i;
+                   }
+                   printf("\nEl factorial de %d es %d\n",num,fact);
+}
+
+
+
+41. Programa que genera quinielas de fútbol.
+
+
+#include <stdlib.h>
+#include <time.h>
+void main(){
+         int a;
+         srand((unsigned)time(NULL));
+         printf("Bienvenido, aqui tiene su quiniela de futbol: ");
+         printf("\n\n");
+         for(int i=1; i<=15; i++){
+                   a=rand()%(3);
+                   if(a==1){
+                            printf("\t\t\t\t%d - 1\n",i);
+                   }else if(a==2){
+                            printf("\t\t\t\t%d - 2\n",i);
+                   }else{
+                            printf("\t\t\t\t%d - X\n",i);
+                   }
+         }
+}
+
+
+
+42. Programa que simule el lanzamiento de una moneda las veces que el usuario desee, posteriormente hará un recuento de las veces que ha salido tanto cara como cruz.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void main(){
+         int x,veces,cara=0,cruz=0;
+         srand((unsigned)time(NULL));
+         printf("Pruebe a lanzar la moneda.\n\n");
+         printf("Cuantas veces?: ");
+         scanf("%d",&veces);
+         for(int i=1;i<=veces;i++){
+                   x=rand()%(2);
+                   if(x==1){
+                            printf("\nCara\n\n");
+                            cara++;
+                   }else{
+                            printf("\nCruz\n\n");
+                            cruz++;
+                   }
+         }
+         printf("\n\tRecuento\n\n");
+         printf("La cara ha salido %d veces.\n",cara);
+         printf("La cruz ha salido %d veces.\n\n",cruz);
+         printf("Gracias por utilizar este programa.\n\n");
+}
