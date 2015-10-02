@@ -14,22 +14,22 @@ main() {
   string escuela;
   float num1, num2, num3;
 
-  cout << "Por favor escriba su escuela: " << endl;
+  cout << "Por favor escriba su escuela: ";
 
   //se camptura el nombre de la escuela
   cin >> escuela;
 
-  cout << "por favor ecriba el primer numero: " << endl;
+  cout << "por favor ecriba el primer numero: ";
 
   //se campura el primer numero
   cin >> num1;
 
-  cout << "por favor escriba el segundo numero: " << endl;
+  cout << "por favor escriba el segundo numero: ";
 
   //se captura el segundo numero
   cin >> num2;
 
-  cout << "por favor escriba el tercer numero: " << endl;
+  cout << "por favor escriba el tercer numero: " ;
 
   //se captura el tercer numero
   cin >> num3;
