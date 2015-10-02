@@ -15,7 +15,7 @@ Las tareas realizadas durante el curso de Programación de Computadoras I - UIP
   9. [Calculo de porcentaje](https://github.com/jcsena/pcc/blob/master/tareas/2/9/app.cpp)
   10. [Pulsaciones del corazón](https://github.com/jcsena/pcc/blob/master/tareas/2/10/app.cpp)
   11. [Coste de vehiculo](https://github.com/jcsena/pcc/blob/master/tareas/2/11/app.cpp) ```Bonus```
-3. ```Clase #4 (2015-10-01 - 2015-10-08)``` Convertir 5 programas de lenguaje  ```c``` a ```c++``` del listado entre el ```#2``` y el ```#12```
+3. ```Clase #4 (2015-10-01 - 2015-10-08)``` Convertir ```5``` programas de lenguaje  ```c``` a ```c++``` del [listado](https://github.com/jcsena/pcc/blob/master/tareas/3/listado.txt) entre el ```#2``` y el ```#12```
   1. [Escritura en pantalla](https://github.com/jcsena/pcc/blob/master/tareas/3/1/app.cpp) ```Excluido```
   2. [Suma de dos números](https://github.com/jcsena/pcc/blob/master/tareas/3/2/app.cpp)
   3. [Longitud de circunferencias](https://github.com/jcsena/pcc/blob/master/tareas/3/3/app.cpp)
