@@ -12,3 +12,4 @@ Los lobaratorios realizados durante el curso de Programación de Computadoras I 
   * [Setprecision](https://github.com/jcsena/pcc/blob/master/laboratorios/2/app2/app.cpp)
   * [Promedio decimal(3)](https://github.com/jcsena/pcc/blob/master/laboratorios/2/app3/app.cpp)
   * [Circulo](https://github.com/jcsena/pcc/blob/master/laboratorios/2/app4/app.cpp)
+  * [Colores](https://github.com/jcsena/pcc/blob/master/laboratorios/2/app5/app.cpp)(Terminal-(OSx, Linux))
