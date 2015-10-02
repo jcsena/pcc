@@ -5,7 +5,7 @@ using namespace std;
 
 float numero, doble, porcentaje;
 
-main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[]) {
   /* code */
 
   cout << "Por favor ingrese un numero" << endl;
@@ -18,6 +18,6 @@ main(int argc, char const *argv[]) {
 
   cout << "El numero es " << numero << endl;
   cout << "Su doble es " << doble << endl;
-  cout << "El 15% del numero es "<< porcentaje << "%" << endl;
-
+  cout << "El 15% del doble es "<< porcentaje << "%" << endl;
+  return 0;
 }
