@@ -9,11 +9,13 @@ considerando que el dólar cotiza a 17.40 pesos por dólar.
  #include <iostream>
  #include <iomanip>
 
+ #define conversion  17.40
+
  using namespace std;
 
  int main(int argc, char const *argv[]) {
 
-   float conversion = 17.40, pesos, totalEnDolar;
+   float  pesos, totalEnDolar;
 
    cout << "Introduzca los pesos mexicanos: ";
    cin >> pesos;
