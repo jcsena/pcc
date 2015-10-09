@@ -6,18 +6,26 @@ porcentaje a calcular y cuál es el resultado final
 #include <iostream>
 #include <iomanip>
 
+//El valor constate dado en el problema
+#define valor 178
 using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-   const int valor = 178;
+  /**
+   * [@por: El valor porcentual  capturado por pantalla]
+   * [@total: Es el resultado de la operacion  @valor*(@por/@conversion) ]
+   */
    float por ,total;
 
+    // se captura el porcentaje por pantalla
     cout << "Escribe el porcentaje(%): ";
     cin >> por;
 
+    //se realiza la operacion para calcular el total Porcentaje
     total = valor * (por/100);
 
+    //se imprime el valor 
     cout << "Porcentaje: " << por << "%, Total: "<< total << endl;
 
 

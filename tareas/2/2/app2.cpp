@@ -12,7 +12,15 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-//se declara la variables de donominacion de billetes
+/**
+ * [@den5: Esta variable recibira un numero de billetes de 5 por pantalla]
+ * [@den10: Esta variable recibira un numero de billetes de 10 por pantalla]
+ * [@den20: Esta variable recibira un numero de billetes de 20 por pantalla]
+ * [@total5: El resultado de la multiplicacion de 5 * la @den5]
+ * [@total10: El resultado de la multiplicacion de 10 * la @den10]
+ * [@total20: El resultado de la multiplicacion de 20 * la @den20]
+ * [@grantotal: El resultado de la suma de todos los totales]
+ */
 int den5,
 den10,
 den20,

@@ -13,15 +13,24 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
+  /**
+   * [@monto: Valor de la compra capturado por pantalla]
+   * [@desc: Se calcula ]
+   * [@totalCompra: Catidad del producto capturado por pantalla]
+   */
   float monto, desc, totalCompra;
 
+  //se recibe el monto de la cuenta
   cout << "Describa el monto de cuenta: ";
   cin >> monto;
 
+  //se la reliza la operacion para calcular el descuento
   desc = monto * 0.15;
 
+  //se realiza la operacion de totalDeCompra
   totalCompra = monto - desc;
 
+  //Se imprime la informacion requerida
   cout << "SubTotal: " << fixed << setprecision(2) << monto << "$" << endl;
   cout << "Descuento: "<< fixed << setprecision(2) << desc << "$" << endl;
   cout << "Total: "<< fixed << setprecision(2) <<totalCompra << "$" <<endl;
