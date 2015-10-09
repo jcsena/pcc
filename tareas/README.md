@@ -28,3 +28,5 @@ Las tareas realizadas durante el curso de Programación de Computadoras I - UIP
   10. [Precio de un objeto sin IVA](https://github.com/jcsena/pcc/blob/master/tareas/3/10/app.cpp)
   11. [Área de un triángulo](https://github.com/jcsena/pcc/blob/master/tareas/3/11/app.cpp)
   12. [Media geométrica de tres numeros](https://github.com/jcsena/pcc/blob/master/tareas/3/12/app.cpp)
+4.  ```Clase #5 (2015-10-08 - 2015-10-15)``` relizar un ejercicio utilizando  ```programacion estructurada```
+    *	 [Suma de dos numeros](https://github.com/jcsena/pcc/blob/master/tareas/4/1/app.cpp)
