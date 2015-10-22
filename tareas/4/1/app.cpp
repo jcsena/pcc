@@ -3,8 +3,6 @@
  sume los numeros
  si la suma es mayor o igual a 100  imprimir mayor o igual a 100
  si no cumple con la regla
-
-
  */
 
 #include <iomanip>
