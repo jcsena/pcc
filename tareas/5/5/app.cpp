@@ -1,7 +1,6 @@
 /*
 17. Programa que simula un cajero automático con un saldo inicial de 1000 Euros.
 
-
 #include <stdio.h>
 void main(){
          int SI,opc;
@@ -34,7 +33,6 @@ void main(){
     }
 }
  */
-
 
 #include <iomanip>
 #include <iostream>

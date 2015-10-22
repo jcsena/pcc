@@ -1,5 +1,4 @@
 /*
-
 16. Programa que indica la correspondencia de un número introducido por el usuario con un mes del año  (aconsejable realizarlo con SWITCH).
 
 #include <stdio.h>
