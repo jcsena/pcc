@@ -31,7 +31,7 @@ Las tareas realizadas durante el curso de Programación de Computadoras I - UIP
 4.  ```Clase #5 (2015-10-08 - 2015-10-15)``` relizar un ejercicio utilizando  ```programacion estructurada```
     *	 [Suma de dos numeros](https://github.com/jcsena/pcc/blob/master/tareas/4/1/app.cpp)
 
-3. ```Clase #4 (2015-10-15 - 2015-10-22)``` Convertir los programas de lenguaje  ```c``` a ```c++``` del [listado](https://github.com/jcsena/pcc/blob/master/tareas/3/listado.txt) entre el ```#13``` y el ```#17```
+3. ```Clase #5 (2015-10-15 - 2015-10-22)``` Convertir los programas de lenguaje  ```c``` a ```c++``` del [listado](https://github.com/jcsena/pcc/blob/master/tareas/3/listado.txt) entre el ```#13``` y el ```#17```
   1. 13 - [Numero Mayor](https://github.com/jcsena/pcc/blob/master/tareas/5/1/app.cpp)
   2. 14 - [Temperatura del dia](https://github.com/jcsena/pcc/blob/master/tareas/5/2/app.cpp)
   3. 15 - [Ecuancion de segundo grado](https://github.com/jcsena/pcc/blob/master/tareas/5/3/app.cpp)
