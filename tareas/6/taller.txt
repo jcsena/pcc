@@ -1,0 +1,99 @@
+1.	Escriba un PROGRAMA que pida el sueldo mensual de un colaborador, aplique un aumento del 15% sobre su salario si el mismo es inferior a 1000.00 dólares, en caso contrario le aumente 10%. DEBE IMPRIMIR EL SALARIO ACTUAL, el aumento  Y EL NUEVO SALARIO.   	    		(5 puntos)
+
+2.	Encierre CON UN CÍRCULO los errores del siguiente programa, corrija, complételo y pruebe su resultado. Haga que el programa funcione correctamente, demuéstrelo por medio de su archivo correspondiente en C++. EL ARCHIVO SE LLAMARÁ PROGRAM2_CORREC.       (10 puntos)
+
+Longitud de la hipotenusa de un triángulo rectángulo
+/* Hipotenusa de un triángulo rectángulo calculada según el teorema de Pitágoras
+#include <iostream>
+include  <iomanip>
+
+main ();
+{
+// Declaraciones
+float  lado, lado2, hipotenusa;
+
+// Entrada de datos
+cout  << “ Cálculo de la hipotenusa \M”;
+cout  << “de un triángulo rectángulo\n”;
+cout  <<  “--------------------------\n”;
+cout  << “Introduce Primer lado:  ”);
+cin  >> &lado1;
+cout  <<  “Introduce Segundo lado:  ”;
+cin  >> lado2 ;
+
+// Cálculos
+hipo = sqrt(lado1*lado1 + lado2*lado2);   // Salida de resultados
+cout  << “La hipotenusa mide \n” , hipotenusa);
+system “pause”;    }
+
+3.	Encierre CON UN CÍRCULO los errores del siguiente programa, corrija, complételo y pruebe su resultado. Haga que el programa funcione correctamente, demuéstrelo por medio de su archivo correspondiente en C++. EL ARCHIVO SE LLAMARÁ PROGRAM3_CORREC.    HAGA EL ALGORITMO.									   (10 puntos)
+
+/* Programa que con vierte pulgadas a centímetros sabiendo que 1 pulgada = 2.54 cm  por ejemplo, 28 pulgadas son 71.12. /*
+
+#include <ioztream>
+#include <iomanip>
+
+using namespace sfd;
+main ();	{
+	   float  cms plg;
+	   cout << "Introduzca cantidad de pulgadas: " < endl;
+	   cin >> plg
+
+	  cm = plg * 2.54;
+
+	cout << endl;
+	cout << plg << " pulgadas son " << cms <<" centimetros ";
+	)
+
+4.	Escriba el programa correspondiente. Debe funcionar correctamente.
+Dado como datos de entrada tres números enteros, determine si los mismos están en orden creciente y los imprima en pantalla. Datos: A, B, C (variables de tipo entero. Los números deben ser diferentes entre sí, de lo contrario no procede).  Se deben imprimir los resultados. Sugerencia: recuerde utilizar operador lógico.	HAGA EL ALGORITMO.				(10 puntos)
+
+5.	Escriba el enunciado simple en C que haga lo que indica cada enciso.
+ (5 puntos)
+a.	Introduzca la variable entera t mediante cin
+b.	Inicialice la variable entera a en 1
+c.	Pruebe y1 para verificar si es mayor o igual a x1
+d.	Imprima la variable power mediante cout (power es entero)
+e.	Multiplique la variable p1 por p2 y asigne el resultado a p3
+
+
+6.	Escriba las siguientes expresiones algebraicas o matemáticas en expresión computadora									(10 puntos)
+
+a.	  (a + b). c			b.      x∙y    		c.  (x + y)5        d.   a∙c – 4∙a∙b
+                       d			      (1-4∙x)				            (a∙b + a∙c)
+
+7.	Un sistema de ecuaciones lineales
+ax + by = c
+dx + ey = f
+se puede resolver con las siguientes fórmulas:
+
+			x =    ce – bf                      y =    af - cd
+ 			         ae - bd		               ae - bd
+
+Diseñar un programa que lea dos conjuntos de coeficientes (a, b y c; d, e y f dos grupos por separado) y visualice los valores de x e y. Luego compare si x es mayor que y e imprima que es x es mayor que y de lo contrario que imprima que y es mayor que x.				 		 (5 puntos)
+
+
+8.	Calcular el área de un triángulo mediante la fórmula:
+
+                                          Área = (p٠ (p - a)٠(p - b)٠(p - c))1/2
+Donde p es el semiperímetro,   p = (a + b + c)/2,  siendo a, b, c los tres lados del triángulo
+Si el área es mayor a 100 entonces imprimirá que los lados del triángulo cumplen con los valores óptimos, de lo contrario imprimirá los valores de los lados del triángulo e imprimirá el mensaje que indique que dichos valores no cumplen con los requisitos. 							(10 puntos)
+
+
+9.	Haga aquí el programa del ejercicio 5.11 del libro Joyanes Aguilar, pagina 166, recuerde utilizar operadores lógicos en su análisis y en el programa perse.										(5 puntos)
+
+10.	Escriba un programa Que pida tres números e imprima si el tercero es igual a la suma del primero y el segundo, o que imprima si el segundo es igual a la suma del primero y el tercero, en caso contrario a los anteriores, imprimirá que el primero es igual a la suma del segundo y el tercero, en otro caso entonces que imprima que la suma no cumple con ninguna de las condiciones de suma dadas.  															(5 puntos)
+
+PROGRAMAS CON SWITCH CASE
+
+1.  Escriba un programa PIA UNA LETRA POR TECLADO E INDIQUE SI ES VOCAL O CONSONANTE O CARÁCTER ALFANUMERICO DISTINTO A LETRAS DE ABECEDARIO. DEBE IMPRMIR EL CARÁCTER Y DE QUE TIPO ES.												(5 puntos)
+
+2. SE PIDEN DOS NUMEROS POR TECLADO. SE HACE LA SUMA DE LOS MISMOS. LUEGO SE VERIFICA SI LA SUMA ES 25 ENTONCES SE IMRPIMEN LOS NUMEROS Y LA MULTIPLICACION DE LOS MISMOS, SI LA SUMA ES 50 O 75 ENTONCES SE IMPRIMEN LOS NUMEROS ASI COMO CADA UNO ELEVADO AL CUADRADO, SI LA SUMA ES 100 0 200 ENTONCES SE IMPRIMEN LOS NUMEROS Y ADEMAS EL CUBO DE LOS MISMOS, SI LA SUMA ES 500 ENTONCES SE IMPRIMEN LOS NUMEROS Y EL DOBLE DE CADA UNO; CUALQUIER OTRO CASO, SOLO SE IMPRIMEN LOS NUMEROS Y SE INDICA QUE SU SUMA NO CUMPLEN CON NINGUNO DE LOS CASOS INDICADOS.										(10 puntos)
+
+1.	3. DISEÑE UN PROGRAMA QUE:					(10 puntos)
+1.	Muestre el listado de los signos del zodiaco con sus números asociados.
+2.	Pedirá un número entero a través de teclado asociado a un signo del zodiaco.
+3.	Mostrará como resultado el NOMBRE DEL SIGNO Y A LA CATEGORIA QUE PERTENECE.
+EJEMPLO:
+
+7 CORRESPONDE A LIBRA Y ES DE CATEGORIA AIRE…
