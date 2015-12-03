@@ -39,3 +39,5 @@ Las tareas realizadas durante el curso de Programación de Computadoras I - UIP
   5. 17 - [Cajero automático](https://github.com/jcsena/pcc/blob/master/tareas/5/5/app.cpp)
 
 4. ```Clase #6 (2015-10-22 - 2015-10-29)``` realize el siguiente ejercicios :  [taller](https://github.com/jcsena/pcc/blob/master/tareas/6/taller.txt)
+
+4. ```Clase #7 (2015-10-22 - 2015-10-29)``` taller 7
